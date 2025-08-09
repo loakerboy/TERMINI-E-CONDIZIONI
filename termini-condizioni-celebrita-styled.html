@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Termini e Condizioni – Giveaway Tavolo Omaggio</title>
+  <meta name="color-scheme" content="light dark">
+  <style>
+    :root{
+      --bg: #0f1221;
+      --card: #10162f;
+      --muted:#8a93a7;
+      --text:#e8ecf3;
+      --accent:#7c5cff;
+      --accent-2:#00d4ff;
+      --ring:rgba(124,92,255,.35);
+    }
+    @media (prefers-color-scheme: light){
+      :root{
+        --bg:#f3f6fb;
+        --card:#ffffff;
+        --muted:#5d6b82;
+        --text:#1b2430;
+        --accent:#6a4dff;
+        --accent-2:#00b3ff;
+        --ring:rgba(106,77,255,.25);
+      }
+    }
+
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, 'Helvetica Neue', Arial, 'Noto Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+      color:var(--text);
+      background:
+        radial-gradient(1200px 600px at 20% -10%, rgba(124,92,255,.22), transparent 60%),
+        radial-gradient(900px 500px at 110% 10%, rgba(0,212,255,.18), transparent 60%),
+        linear-gradient(180deg, var(--bg), var(--bg));
+      padding:32px 16px 56px;
+    }
+
+    .wrap{
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .hero{
+      text-align:center;
+      margin-bottom: 20px;
+    }
+
+    .badge{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      padding:8px 14px;
+      border-radius:999px;
+      background: linear-gradient(90deg, rgba(124,92,255,.1), rgba(0,212,255,.1));
+      border: 1px solid var(--ring);
+      box-shadow: 0 8px 30px rgba(0,0,0,.18), inset 0 0 0 1px rgba(255,255,255,.04);
+      backdrop-filter: blur(6px);
+      -webkit-backdrop-filter: blur(6px);
+      font-weight:600;
+      color: var(--muted);
+      letter-spacing:.2px;
+    }
+
+    h1{
+      font-size: clamp(28px, 4vw, 42px);
+      margin: 14px 0 8px;
+      letter-spacing: .5px;
+    }
+
+    .date{
+      color: var(--muted);
+      font-size: 14px;
+      margin-bottom: 24px;
+    }
+
+    .card{
+      background: var(--card);
+      border-radius: 14px;
+      padding: 22px;
+      box-shadow:
+        0 20px 60px rgba(0,0,0,.25),
+        0 0 0 1px rgba(255,255,255,.04);
+      position: relative;
+      overflow: hidden;
+      isolation: isolate;
+    }
+    .card::before{
+      content:"";
+      position:absolute;
+      inset:-1px;
+      background: radial-gradient(600px 140px at 20% -10%, rgba(124,92,255,.16), transparent 60%);
+      z-index:-1;
+    }
+
+    /* Numbered list styles */
+    ol.rules{
+      counter-reset: rule;
+      list-style: none;
+      margin:0;
+      padding:0;
+      display:grid;
+      grid-template-columns: 1fr;
+      gap: 16px;
+    }
+    .rule{
+      display:grid;
+      grid-template-columns: 54px 1fr;
+      gap: 14px;
+      align-items:start;
+      padding:14px;
+      border-radius:12px;
+      background: rgba(255,255,255,.02);
+      border:1px solid rgba(255,255,255,.06);
+      transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease, background .18s ease;
+    }
+    .rule:hover{
+      transform: translateY(-2px);
+      box-shadow: 0 10px 30px rgba(0,0,0,.25);
+      border-color: var(--ring);
+      background: rgba(124,92,255,.06);
+    }
+    .rule .num{
+      counter-increment: rule;
+      width: 54px;
+      height: 54px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--accent), var(--accent-2));
+      display:grid;
+      place-items:center;
+      font-weight:700;
+      color:white;
+      font-size:18px;
+      box-shadow: 0 8px 24px rgba(124,92,255,.45);
+      user-select:none;
+    }
+    .rule h3{
+      margin: 0 0 6px 0;
+      font-size: 18px;
+    }
+    .rule p{
+      margin:0;
+      line-height:1.6;
+      color: var(--text);
+      opacity: .95;
+      font-size: 15.5px;
+    }
+
+    .muted{
+      color: var(--muted);
+    }
+
+    .footer{
+      text-align:center;
+      margin-top: 18px;
+      font-size: 13px;
+      color: var(--muted);
+    }
+
+    /* Print */
+    @media print{
+      body{background:white; color:#111; padding:0}
+      .badge{border:1px solid #ddd; background:transparent; box-shadow:none}
+      .card{box-shadow:none; border:1px solid #e5e7eb}
+      .rule{background:#fff; border:1px solid #eee; box-shadow:none}
+      .footer{color:#555}
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="hero">
+      <div class="badge">Giveaway CELEBRITÀ • Tavolo Omaggio</div>
+      <h1>Termini e Condizioni</h1>
+      <div class="date">Ultimo aggiornamento: <strong>09/08/2025</strong></div>
+    </div>
+
+    <div class="card" aria-labelledby="titolo-termini">
+      <ol class="rules">
+        <li class="rule">
+          <div class="num">1</div>
+          <div>
+            <h3>Oggetto</h3>
+            <p>I presenti Termini e Condizioni disciplinano la partecipazione al concorso “Vinci un Tavolo Omaggio”, organizzato da <strong>CELEBRITÀ</strong> (di seguito, “Organizzatore”).</p>
+          </div>
+        </li>
+
+        <li class="rule">
+          <div class="num">2</div>
+          <div>
+            <h3>Modalità di partecipazione</h3>
+            <p>Per partecipare, l’utente deve registrarsi tramite il modulo presente sul sito ufficiale dell’Organizzatore. Ogni persona può partecipare una sola volta. Non sono ammessi partecipanti con dati falsi o incompleti.</p>
+          </div>
+        </li>
+
+        <li class="rule">
+          <div class="num">3</div>
+          <div>
+            <h3>Estrazione</h3>
+            <p>La data dell’estrazione sarà annunciata sui canali social ufficiali dell’Organizzatore.</p>
+          </div>
+        </li>
+
+        <li class="rule">
+          <div class="num">4</div>
+          <div>
+            <h3>Premio</h3>
+            <p>Il premio consiste in un <strong>Tavolo Omaggio</strong>. Il premio non è cedibile, né convertibile in denaro o altri beni/servizi.</p>
+          </div>
+        </li>
+
+        <li class="rule">
+          <div class="num">5</div>
+          <div>
+            <h3>Annuncio vincitore</h3>
+            <p>Il vincitore sarà annunciato sui social media ufficiali dell’Organizzatore.</p>
+          </div>
+        </li>
+
+        <li class="rule">
+          <div class="num">6</div>
+          <div>
+            <h3>Responsabilità</h3>
+            <p>L’Organizzatore non è responsabile per eventuali problemi tecnici, ritardi, interruzioni o malfunzionamenti del sito che possano impedire la registrazione o la partecipazione al concorso.</p>
+          </div>
+        </li>
+
+        <li class="rule">
+          <div class="num">7</div>
+          <div>
+            <h3>Privacy</h3>
+            <p>I dati personali raccolti saranno trattati in conformità alla normativa vigente in materia di protezione dei dati personali e alla nostra <a href="privacy.html">Informativa Privacy</a>.</p>
+          </div>
+        </li>
+
+        <li class="rule">
+          <div class="num">8</div>
+          <div>
+            <h3>Accettazione</h3>
+            <p>La partecipazione al concorso implica l’accettazione integrale dei presenti Termini e Condizioni.</p>
+          </div>
+        </li>
+
+        <li class="rule">
+          <div class="num">9</div>
+          <div>
+            <h3>Contatti</h3>
+            <p>Per qualsiasi domanda o richiesta, scrivi su Instagram a: <strong>@discocelebrita</strong>.</p>
+          </div>
+        </li>
+      </ol>
+    </div>
+
+    <div class="footer">© 2025 CELEBRITÀ • Giveaway informativo – pagina ottimizzata per mobile</div>
+  </div>
+</body>
+</html>
